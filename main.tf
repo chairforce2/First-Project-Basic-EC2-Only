@@ -3,7 +3,7 @@
 
 provider "aws" {
   region  = "us-east-1"
-  #statically defined credentials from pan-lab okta login to SSO Reserved user on Sept 11 2020
+  #statically typed credentials, gather ad-hoc from Okta login at time of use (auto-rotated)
   access_key = "ASIATXWVNGTZU4AFKXUU"
   secret_key = "0gkwnGoRvpr8xwZ3D684aqiiJmxkaXhl4cSXPaF3"
   skip_credentials_validation = true
