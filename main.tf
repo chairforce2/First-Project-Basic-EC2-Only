@@ -20,8 +20,8 @@ resource "aws_instance" "Ubuntu_Web_Server" {
 
 #defining an AWS VPC and subnets
 resource "aws_vpc" "example-vpc" {
-  cidr_block = 10.0.0.0/16
-  tage - {
+  cidr_block = "10.0.0.0/16"
+  tags = {
     Name = "Example-VPC"
   }
 }
