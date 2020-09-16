@@ -4,8 +4,8 @@
 provider "aws" {
   region  = "us-east-1"
   #statically typed credentials, gather ad-hoc from Okta login at time of use (auto-rotated)
-  access_key = "ASIATXWVNGTZU4AFKXUU"
-  secret_key = "0gkwnGoRvpr8xwZ3D684aqiiJmxkaXhl4cSXPaF3"
+  access_key = "my_access_key"
+  secret_key = "my_secret_key"
   skip_credentials_validation = true
   skip_requesting_account_id = true
 }
