@@ -17,3 +17,21 @@ resource "aws_instance" "Ubuntu_Web_Server" {
     instance_type = "t2.micro"
     
 }
+
+#defining an AWS VPC and subnets
+resource "aws_vpc" "example-vpc" {
+  cidr_block = 10.0.0.0/16
+  tage - {
+    Name = "Example-VPC"
+  }
+}
+
+#defining subnet in the example-vpc
+resource "aws_subnet" "example-subnet"{
+  vpc_id = "${aws_vpc.example-vpc.id}"
+  cidr_block = "10.0.1.0/24"
+
+  tags = {
+    Name = "public-subnet"
+  }
+}
